@@ -30,26 +30,39 @@ function mainfunction() {
 	}
 
 	//ADDING
-	function onPress() {
+
+	function onPress(event) {
 		// addingEle(innerCont, "div", null, ["numberBox", "boxsizing"], "Box");
+
 		for (let i = 1; i <= Max; i++) {
-			addingEle(innerCont, "div", null + i, ["numberBox", "boxsizing"], "" + i);
+			event.createElement("div");
+			event.classList = "box" + i;
+			event.appendChild(innerCont);
+			// addingEle(innerCont, "div", null + i, ["numberBox", "boxsizing"], "" + i);
 			if (i % 3 === 0 && i % 5 === 0) {
-				addingEle(
-					innerCont,
-					"div",
-					null + i,
-					["numberBox", "boxsizing", "boxFizzBuzz"],
-					"FizzBuzz " + i
-				);
+				// addingEle(
+				// 	innerCont,
+				// 	"div",
+				// 	null + i,
+				// 	["numberBox", "boxsizing", "boxFizzBuzz"],
+				// 	"FizzBuzz " + i
+				// );
 			} else if (i % 3 === 0 && i % 5 !== 0) {
-				addingEle(
-					innerCont,
-					"div",
-					null + i,
-					["numberBox", "boxsizing", "boxFizz"],
-					"Fizz " + i
-				);
+				// addingEle(
+				// 	innerCont,
+				// 	"div",
+				// 	null + i,
+				// 	["numberBox", "boxsizing", "boxFizz"],
+				// 	"Fizz " + i
+				// );
+			} else if (i % 5 === 0 && i % 3 !== 0) {
+				// addingEle(
+				// 	innerCont,
+				// 	"div",
+				// 	null + i,
+				// 	["numberBox", "boxsizing", "boxBuzz"],
+				// 	"Buzz " + i
+				// );
 			}
 		}
 	}

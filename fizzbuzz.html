@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="java/forfizzbuzz.js"></script>
-    <link rel="stylesheet" href="css/forvisual.css">
-    <title>FizzBuzz/title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="java/forfizzbuzztry.js" defer></script>
+		<link rel="stylesheet" href="css/forvisual.css" />
+		<title>FizzBuzz</title>
+	</head>
+	<body>
+		<header class="bck-col"><h1>FizzBuzz</h1></header>
+		<main>
+			<div class="mainnav">
+				<div class="center">
+					<input
+						class="randomnum"
+						type="number"
+						name=""
+						id="max-count"
+						min="0"
+						max="100"
+						value="10"
+					/>
+				</div>
+			</div>
+			<div id="mainbuttons">
+				<button class="btncss addbutton" id="add">Add One</button>
+				<button class="btncss randombutton" id="random">Add Random</button>
+				<button class="btncss clearbutton" id="clear">Clear All</button>
+			</div>
+			<div class="inner-cont" id="container"></div>
+		</main>
+	</body>
 </html>

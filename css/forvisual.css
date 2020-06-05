@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 6em;
+	font-family: "Black Han Sans", sans-serif;
+	background-color: #596275;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: #fbc531;
+	border-bottom: #fbc531 solid 10px;
+}
+#mainbuttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 100px;
+	margin-top: 40px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.btncss {
+	padding: 15px, 15px;
+	font-size: 2.5em;
+	background-color: #778ca3;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.randomnum {
+	margin-top: 20px;
+	font-size: 120px;
+	text-align: center;
+	border: solid #fbc531 5px;
+	background-color: #596275;
+	font-family: "Black Han Sans", sans-serif;
+	color: #ffffff;
+}
+.center {
+	text-align: center;
+}
+
+/* for java  */
+.numberBox {
+	background-color: #cad3c8;
+}
+#container {
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+	gap: 15px;
+}
+.boxsizing {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 2em;
+}

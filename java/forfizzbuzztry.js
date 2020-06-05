@@ -28,27 +28,48 @@ function mainfunction() {
 		newEl.innerText = text;
 		innerCont.appendChild(newEl);
 	}
+
 	//ADDING
-	function onPress(event) {
-		console.log("adding:", event.target.innerText);
-		addingEle(innerCont, "div", null, ["numberBox", "boxsizing"], "Box");
+	function onPress() {
+		// addingEle(innerCont, "div", null, ["numberBox", "boxsizing"], "Box");
+		for (let i = 1; i <= Max; i++) {
+			addingEle(innerCont, "div", null + i, ["numberBox", "boxsizing"], "" + i);
+			if (i % 3 === 0 && i % 5 === 0) {
+				addingEle(
+					innerCont,
+					"div",
+					null + i,
+					["numberBox", "boxsizing", "boxFizzBuzz"],
+					"FizzBuzz " + i
+				);
+			} else if (i % 3 === 0 && i % 5 !== 0) {
+				addingEle(
+					innerCont,
+					"div",
+					null + i,
+					["numberBox", "boxsizing", "boxFizz"],
+					"Fizz " + i
+				);
+			}
+		}
 	}
 	//ADDING RANDOM
-	function randomElement(event) {
+	function randomElement() {
 		console.log("random of boxes");
-		for (let i = 1; i < maxCount; i++) {
+		for (let i = 1; i <= maxCount; i++) {
+			const id = "box-id" + lastlId;
 			lastlId++;
 			addingEle(
 				innerCont,
 				"div",
-				"box-id" + i,
+				"id" + i,
 				["numberBox", "boxsizing"],
 				"BOX" + i
 			);
 		}
 	}
 	//REMOVES CHILDREN, SAD:(
-	function clearElement(event) {
+	function clearElement() {
 		console.log("clearing");
 		while (innerCont.firstChild) {
 			innerCont.removeChild(innerCont.firstChild);
@@ -62,4 +83,5 @@ function mainfunction() {
 		console.log(typeof maxCount);
 	}
 }
+
 mainfunction();

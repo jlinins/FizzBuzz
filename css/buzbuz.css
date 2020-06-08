@@ -1,0 +1,10 @@
+body {
+	text-align: center;
+	width: 80vw;
+	margin: 0 auto;
+	padding-top: 15%;
+}
+
+p {
+	word-wrap: break-word;
+}

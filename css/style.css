@@ -2,10 +2,6 @@ body {
 	background-color: #d2dae2;
 	margin: 0;
 }
-p {
-	margin: 0;
-	padding: 0;
-}
 
 h1 {
 	background-color: #079992;
@@ -17,14 +13,14 @@ h1 {
 }
 
 button {
-	border: 0;
+	border: solid white;
 	border-radius: 1rem;
-	color: #fafafa;
-	display: inline-block;
+	display: block;
 	cursor: pointer;
 	font-size: 55px;
 	text-align: center;
 }
+
 /* ul {
 	margin: 0;
 	padding: 0;
@@ -40,7 +36,6 @@ button {
 	border: solid black 2px;
 	border-radius: 0.5rem;
 	box-sizing: border-box;
-	color: #0a0a0a;
 	cursor: pointer;
 	display: inline-block;
 	margin-right: 20px;

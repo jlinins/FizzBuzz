@@ -13,7 +13,7 @@ h1 {
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	font-size: 7rem;
+	font-size: 110px;
 }
 
 button {
@@ -22,9 +22,7 @@ button {
 	color: #fafafa;
 	display: inline-block;
 	cursor: pointer;
-	font-size: 3rem;
-	/* margin-right: 1rem;
-	padding: 0.5rem; */
+	font-size: 55px;
 	text-align: center;
 }
 /* ul {
@@ -45,12 +43,13 @@ button {
 	color: #0a0a0a;
 	cursor: pointer;
 	display: inline-block;
-	margin-right: 1rem;
-	margin-bottom: 1rem;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	width: 170px;
 	height: 71px;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 25px;
+	padding-top: 15px;
 }
 
 .fizz {

@@ -8,3 +8,8 @@ body {
 p {
 	word-wrap: break-word;
 }
+.boxes {
+	display: inline-block;
+	background-color: teal;
+	font-size: 3rem;
+}

@@ -2,25 +2,40 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>FizzBuzz</title>
-		<link rel="stylesheet" href="css/buzbuz.css" />
-		<script src="java/realjs.js" defer></script>
+		<title>Fizz Buzz</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="java/script.js" defer></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<!-- partial:index.partial.html -->
-		<body>
-			<h1>FizzBuzz</h1>
-			<form>
-				<input
-					type="text"
-					class="num"
-					name="num"
-					placeholder="type number here"
-				/>
-				<button>Submit</button>
-			</form>
-			<p>&nbsp</p>
-		</body>
+		<h1>
+			<span style="color: #78e08f;">Fizz</span>
+			<span style="color: #fa983a;"> Buzz</span>
+		</h1>
+
+		<div class="move">
+			<ul
+				id="fizz-buzz-list"
+				class="list"
+				data-fizz-buzz
+				aria-live="assertive"
+				role="region"
+			></ul>
+		</div>
+
+		<div class="filter">
+			<button data-fizz class="fizz" aria-controls="fizz-buzz-list">
+				Fizz
+			</button>
+			<button data-buzz class="buzz" aria-controls="fizz-buzz-list">
+				Buzz
+			</button>
+			<button data-fizz-buzz class="fizz-buzz" aria-controls="fizz-buzz-list">
+				Fizz Buzz
+			</button>
+		</div>
 	</body>
 </html>

@@ -13,8 +13,7 @@ h1 {
 }
 
 button {
-	border: solid white;
-	border-radius: 1rem;
+	border: solid white 5px;
 	display: block;
 	cursor: pointer;
 	font-size: 55px;
